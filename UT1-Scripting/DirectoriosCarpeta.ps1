@@ -15,17 +15,18 @@
         Versión: 1.0
         Notas: []
 #>
+clear-host
 $cursos = @("Asir1","Asir2","Daw1","Daw2","Dam1","Dam2","Smr1","Smr2","Smrd1","Smrd2")
 foreach ($curso in $cursos){
 
-     if ((mkdir "$env:userhome\Desktop\$curso") -eq $true){
-        write-host "El directorio $curso ya existe"
-    } else {{
-        mkdir $env:userhome\Desktop\$curso
+     if (Test-Path("$env:userprofile\Desktop\Cursos\$curso")){
+        write-host "El directorio $curso ya existe."
+    } else {
+        mkdir $env:userprofile\Desktop\Cursos\$curso
         for($i=1;$i -le 20;$i++){
-        mkdir $env:userhome\Desktop\$curso\$i
+        mkdir $env:userprofile\Desktop\Cursos\$curso\$Curso$i
     }
     write-host "El directorio $curso se ha creado correctamente"
     }
 }
-}
+
