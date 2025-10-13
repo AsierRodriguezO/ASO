@@ -4,7 +4,9 @@ He aprendido y creado scripts basicos en power shell usar funciones , menus, buc
 
 Hemos realizado 3 ficheros diferentes con diferentes funciones y scripts de power shell.
 > El primero es un script sencillo de iniciacion en el hacemos un hello world.
+
 > El segundo era algo mas elaborado pero seguia siendo bastante sencillo. Este era una iniciacion a los arrays.
+
 > Por ultimo el ultimo fichero contiene una tarea de 8 ejercicios donde usas varias funciones de power shell y scripts:
 
 1. Comprovar si un numero es par o impar/ Preguntar al usuario su edad y mostrar un mensaje en funcion de si es mayor o menor de edad.
