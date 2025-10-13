@@ -1,9 +1,9 @@
 <#
     .SYNOPSIS
-         [Creacion de bucles.]
+         [Creacion de carpetas.]
 
     .DESCRIPTION
-         [Primer script que creo en PowerShell para mostrar bucles.]
+         [Creación de directorios para cursos.]
 
     .PARAMETER 
         [No hay parámetros en este script simple.]
