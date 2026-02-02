@@ -63,11 +63,15 @@ Cifrado / NLA: Sí
 
 ## 📸 Evidencias (añadir en `evidencias/`)
 1. `1_usuario_creado_rdp.png` — Usuario `remoto_rdp` creado y añadido al grupo Usuarios de Escritorio remoto.
+![imagenes](/ASO-UT4-Admin-Remota/capturas/rpd.png)
 
+![imagenes](/ASO-UT4-Admin-Remota/capturas/rpd1.png)
 2. `2_nla_habilitada.png` — Configuración donde se vea que la Autenticación de Nivel de Red está habilitada.
-
+![imagenes](/ASO-UT4-Admin-Remota/capturas/rpd2.png)
 3. `3_sesion_rdp.png` — Sesión RDP activa mostrando el escritorio del servidor con `remoto_rdp` conectado.
+![imagenes](/ASO-UT4-Admin-Remota/capturas/rpd3.png)
 
+![imagenes](/ASO-UT4-Admin-Remota/capturas/rpd4.png)
 4. `4_acceso_denegado.png` — Captura de intento fallido de acceso con un usuario distinto a `remoto_rdp`.
-
+![imagenes](/ASO-UT4-Admin-Remota/capturas/rpd5.png)
 
