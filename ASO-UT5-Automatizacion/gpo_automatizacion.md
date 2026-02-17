@@ -144,17 +144,14 @@ En un cliente:
 
 ### Evidencias requeridas (mantenimiento)
 1. `1_gpo_mantenimiento_gpmc.png` — GPO **Mantenimiento-Automatico-[INICIALES]** creada y vinculada
-2. `2_tarea_gpo_config.png` — Configuración de la tarea en la GPO (pestañas General/Triggers/Actions)
-3. `3_tarea_cliente_taskschd.png` — Tarea visible en el Programador del cliente
-4. `4_ejecucion_exitosa.png` — Ejecución exitosa (estado o historial)
-5. `5_contenido_log.png` — Contenido del log generado (abierto con Bloc de notas)
-
----
-
-## 🔗 Referencias
-- GPO Drive Maps (User Preferences): https://learn.microsoft.com
-- Programar tareas con GPO (Preferences > Scheduled Tasks): https://learn.microsoft.com
-
----
-
-> **Consejo:** Añade las capturas en `ASO-UT5-Automatizacion/capturas/` y actualiza este documento con las referencias a las imágenes para completar la evidencia.
+  ![](/ASO-UT5-Automatizacion/images/mantenimiento1.png)
+  ![](/ASO-UT5-Automatizacion/images/mantenimiento2.png)
+1. `2_tarea_gpo_config.png` — Configuración de la tarea en la GPO 
+   ![](/ASO-UT5-Automatizacion/images/mantenimiento3.png)
+   ![](/ASO-UT5-Automatizacion/images/mantenimiento4.png)
+2. `3_tarea_cliente_taskschd.png` — Tarea visible en el Programador del cliente
+   ![](/ASO-UT5-Automatizacion/images/mantenimiento5.png)
+3. `4_ejecucion_exitosa.png` — Ejecución exitosa (estado o historial)
+   ![](/ASO-UT5-Automatizacion/images/mantenimiento6.png)
+4. `5_contenido_log.png` — Contenido del log generado (abierto con Bloc de notas)
+ ![](/ASO-UT5-Automatizacion/images/mantenimiento7.png)
