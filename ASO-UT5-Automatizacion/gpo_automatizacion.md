@@ -55,26 +55,6 @@ C:\Compartidas\
 - C:\Compartidas\Informatica → Compartida-Info → Solo **GRP_Informatica**
 - C:\Compartidas\Comun → Compartida-Todos → **Todos los usuarios** (o grupo específico que represente a todos)
 
-### Comandos útiles (PowerShell como Administrador)
-Crear carpetas:
-```
-New-Item -Path "C:\Compartidas\Admin" -ItemType Directory -Force
-New-Item -Path "C:\Compartidas\Informatica" -ItemType Directory -Force
-New-Item -Path "C:\Compartidas\Comun" -ItemType Directory -Force
-```
-Crear las comparticiones y limitar permisos SMB:
-```
-New-SmbShare -Name "Compartida-Admin" -Path "C:\Compartidas\Admin" -FullAccess "[INICIALES]\\GRP_Administracion"
-New-SmbShare -Name "Compartida-Info" -Path "C:\Compartidas\Informatica" -FullAccess "[INICIALES]\\GRP_Informatica"
-New-SmbShare -Name "Compartida-Todos" -Path "C:\Compartidas\Comun" -FullAccess "Authenticated Users"
-```
-NTFS (ejemplo con icacls):
-```
-icacls "C:\Compartidas\Admin" /inheritance:r
-icacls "C:\Compartidas\Admin" /grant "[INICIALES]\\GRP_Administracion:(OI)(CI)M"
-icacls "C:\Compartidas\Admin" /remove "Everyone"
-```
-
 ### Crear GPO de mapeo
 - Nombre de GPO: **Mapeo-Unidades-[INICIALES]**
 - Ruta en GPMC: **User Configuration > Preferences > Windows Settings > Drive Maps**
@@ -102,14 +82,15 @@ icacls "C:\Compartidas\Admin" /remove "Everyone"
 ![](/ASO-UT5-Automatizacion/images/mapeado6.png)
 4. `4_config_unidades_gpo.png` — Configuración de las 3 unidades en la GPO
 ![](/ASO-UT5-Automatizacion/images/mapeado7.png)
-5. `5_segmentacion_unidades.png` — Segmentación (Item-Level Targeting) para Z: y Y:
 
-6. `6_explorer_user_admin1.png` — Explorador de user_admin1 mostrando Z: y X:
-
-7. `7_explorer_user_info1.png` — Explorador de user_info1 mostrando Y: y X:
-
-8. `8_acceso_denegado.png` — Captura de intento fallido a acceso no autorizado
-
+1. `5_explorer_user_admin1.png` — Explorador de user_admin1
+![](/ASO-UT5-Automatizacion/images/mapeado8.png)
+![](/ASO-UT5-Automatizacion/images/mapeado9.png)
+1. `6_explorer_user_info1.png` — Explorador de user_info1
+![](/ASO-UT5-Automatizacion/images/mapeado10.png)
+![](/ASO-UT5-Automatizacion/images/mapeado11.png)
+2. `7_acceso_denegado.png` — Captura de intento fallido a acceso no autorizado
+![](/ASO-UT5-Automatizacion/images/mapeado12.png)
 
 ---
 
